@@ -1,7 +1,7 @@
-from app import app
+from app import app_builder
 
-app.run(
-    host=app.config["APP_HOST"],
-    port=app.config["APP_PORT"],
-    debug=app.config["APP_DEBUG"]
+app_builder.run(
+    host=app_builder.config["APP_HOST"],
+    port=app_builder.config["APP_PORT"],
+    debug=app_builder.config["APP_DEBUG"]
 )
